@@ -8,7 +8,7 @@
 __pycache__
 
 # Robot Framework results
-robot/Client-Douglas-London-2GUP-V2/results/
+robot/Client-Douglas-London-2GUP/results/
 
 # Salesforce cache
 .sf/
