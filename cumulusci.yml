@@ -6,9 +6,13 @@ project:
         api_version: '55.0'
     dependencies:
         - github: https://github.com/BrioGit/BRIOLabs-SF-Base
-        - version_id:  04t1T00000072fW  ### Litify Version 29.01
         - version_id:  04tHs000001Eq9X  ### Litify Version 32.8
-        ###- version_id: 04t1T0000003w1I ### Version 29
+        - version_id:  04tDn000000NfVyIAK  ### Litify Utilities Version 1.3
+        - version_id:  04tRh0000007o6XIAQ  ### Matter Plans Version 2.15
+        - version_id:  04t5w000005xvbb  ### Financials Version 2.15
+        - version_id:  04tKi000000D2qD  ### Docrio Version 2.15
+        - github: https://github.com/SFDO-Community/declarative-lookup-rollup-summaries
+        - version_id:  04t4T0000011RGT  ### Custom Text Banner
     git:
         default_branch: 'main'
         prefix_feature: 'feature/'
