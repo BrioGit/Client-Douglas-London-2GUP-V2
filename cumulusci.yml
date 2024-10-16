@@ -6,7 +6,8 @@ project:
         api_version: '55.0'
     dependencies:
         - github: https://github.com/BrioGit/BRIOLabs-SF-Base
-        ###- version_id: 04t1T00000072EQ ### Version 27.3
+        - version_id:  04t1T00000072fW  ### Litify Version 29.01
+        - version_id:  04tHs000001Eq9X  ### Litify Version 32.8
         ###- version_id: 04t1T0000003w1I ### Version 29
     git:
         default_branch: 'main'
