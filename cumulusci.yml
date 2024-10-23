@@ -63,6 +63,11 @@ tasks:
         options:
             api_names: PERMISSION_SET_NAME_HERE
 
+    assign_brio_admin_permission_set_group:
+        class_path: cumulusci.tasks.salesforce.users.permsets.AssignPermissionSetGroups
+        options:
+            api_names: brio__BRIO_Administrator_PSG
+
 ### Flows ######################################################################
 flows:
 
@@ -70,19 +75,19 @@ flows:
         steps:
             3.0:
                 task: deploy_dev_config
-            # 3.1:
-            #    task: assign_unpackaged_permission_sets
+            3.1:
+               task: assign_brio_admin_permission_set_group
             3.3: 
                 flow: litify:configure_mdapi
     
     config_apextest:
         steps:
             3.1:
-                task: assign_unpackaged_permission_sets
+                task: assign_brio_admin_permission_set_group
             3.2: 
                 flow: litify:configure_mdapi
     
     config_managed:
         steps:
             3.1:
-                task: assign_unpackaged_permission_sets
+                task: assign_brio_admin_permission_set_group
